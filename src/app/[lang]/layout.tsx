@@ -6,7 +6,7 @@ import Navbar from "@/app/_components/Navbar";
 import { Suspense } from "react";
 import InternetConnection from "@/app/_components/InternetConnection";
 import getLocalizedData from "@/services/getLocalizedData";
-import { LayoutProps } from "@/models/IDictionary/ILayout";
+import { LayoutProps } from "@/models/IDictionary/Layout";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],

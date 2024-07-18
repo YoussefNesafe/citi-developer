@@ -7,7 +7,7 @@ import MobileNavbar from './components/MobileNavbar'
 const Navbar = () => {
   const { isDesktop } = useWindowSize()
   return (
-    <nav>
+    <nav className='fixed top-0'>
       {
         isDesktop ? <DesktopNavbar /> : <MobileNavbar />
       }

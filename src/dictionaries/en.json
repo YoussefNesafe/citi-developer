@@ -3,7 +3,7 @@
     "internetConnection": {
         "title":"No internet connection",
         "description":"Please check your internet connection and try again."
-      },
+    },
     "languages": [
         {
           "label": "English",
@@ -21,7 +21,7 @@
           "href": "/ur"
         }
       ],
-      "pagesLinks": [
+    "pagesLinks": [
         {
           "title": "Home",
           "href": "/",
@@ -92,8 +92,15 @@
           "key": "contact-us" 
         }
 
-      ]
+     ]
       
+  },
+  "notFoundPage": {
+    "title": "Opps! Page Not Found",
+    "button": {
+      "title": "Back to Home",
+      "href": "/"
+    }
   },
   "homePage": {
     "test": "EN Language Test"

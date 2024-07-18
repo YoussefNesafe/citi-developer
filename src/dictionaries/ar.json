@@ -1,23 +1,108 @@
 {
   "layout": {
-    "navbar": {
-      "languages": [
+    "internetConnection": {
+        "title":"No internet connection",
+        "description":"Please check your internet connection and try again."
+    },
+    "languages": [
         {
           "label": "English",
-          "value": "en"
+          "value": "en",
+          "href": "/en"
         },
         {
           "label": "عربي",
-          "value": "ar"
+          "value": "ar",
+          "href": "/ar"
         },
         {
           "label": "اُردُو",
-          "value": "ur"
+          "value": "ur",
+          "href": "/ur"
         }
-      ]
+      ],
+    "pagesLinks": [
+        {
+          "title": "Home",
+          "href": "/",
+          "key": "home" 
+        },
+        {
+          "title": "About",
+          "href": "/about",
+          "key": "about",
+          "subLinks": [
+            {
+              "title": "Citi Developer",
+              "href": "/about/citi-developer",
+              "key": "citi-developer"
+            },
+            {
+              "title": "Portfolio",
+              "href": "/about/portfolio",
+              "key": "portfolio"
+            },
+            {
+              "title": "News",
+              "href": "/about/news",
+              "key": "news"
+            },
+            {
+              "title": "Blogs",
+              "href": "/about/blogs",
+              "key": "blogs"
+            },
+            {
+              "title": "Our Team",
+              "href": "/about/our-team",
+              "key": "our-team"
+            },
+            {
+              "title": "Experience Center",
+              "href": "/about/experience-center",
+              "key": "experience-center"
+            },
+            {
+              "title": "Careers",
+              "href": "/about/careers",
+              "key": "careers"
+            }
+          ] 
+        },
+        {
+          "title": "Projects",
+          "href": "/projects",
+          "key": "projects",
+          "subLinks": [
+            {
+              "title": "Our Projects",
+              "href": "/projects/our-projects",
+              "key": "our-projects"
+            },
+            {
+              "title": "Aveline",
+              "href": "/projects/aveline",
+              "key": "aveline"
+            }
+          ] 
+        },
+        {
+          "title": "Contact Us",
+          "href": "/contact-us",
+          "key": "contact-us" 
+        }
+
+     ]
+      
+  },
+  "notFoundPage": {
+    "title": "Opps! Page Not Found",
+    "button": {
+      "title": "Back to Home",
+      "href": "/"
     }
   },
- "homePage": {
-    "test": "AR Language Test"
+  "homePage": {
+    "test": "EN Language Test"
   }
 }

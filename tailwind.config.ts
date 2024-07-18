@@ -19,6 +19,22 @@ const config: Config = {
       desktop: '1024px',
     },
     extend: {
+      keyframes: {
+        slideToBottom: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+        fadeInSlideUp: {
+          '0%': { opacity: '0', transform: 'translateY(10%)' },
+          '100%': { opacity: '100%', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        slideToBottom: 'slideToBottom 1.5s forwards linear',
+        slideToBottom2: 'slideToBottom 1.5s 500ms forwards linear',
+        slideToBottom3: 'slideToBottom 1.5s 1000ms forwards linear',
+        fadeInSlideUp: 'fadeInSlideUp 1s 800ms forwards linear',
+      },
       backgroundImage: {
        'linear-black': 'radial-gradient(circle, rgba(45,49,60,1) 0%, rgba(0,0,0,1) 100%)',
       },
