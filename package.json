@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",
+    "@gsap/react": "^2.1.1",
     "class-variance-authority": "^0.7.0",
+    "gsap": "^3.12.5",
     "isomorphic-dompurify": "^2.13.0",
     "negotiator": "^0.6.3",
     "next": "14.2.4",

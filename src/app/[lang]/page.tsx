@@ -1,10 +1,10 @@
-import { IHomePage } from "@/models/IDictionary/IHomePage";
+import { HomePageProps } from "@/models/IDictionary/HomePage";
 import { Locale } from "../../../i18n-config";
 import getLocalizedData from "@/services/getLocalizedData";
 
 
 export default async function Page({ params: { lang } }: { params: { lang: Locale } }) {
-  const { test } = await getLocalizedData<IHomePage>(lang, 'homePage');
+  const { test } = await getLocalizedData<HomePageProps>(lang, 'homePage');
 
   return (
     <main>
