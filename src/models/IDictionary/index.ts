@@ -1,5 +1,7 @@
-import { IHomePage } from "./IHomePage";
+import { HomePageProps } from './HomePage';
+import { LayoutProps } from "./ILayout";
 
 export interface IDictionary {
-  IHomePage: IHomePage  
+  layout: LayoutProps;
+  homePage: HomePageProps;  
 } 

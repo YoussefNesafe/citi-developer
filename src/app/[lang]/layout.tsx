@@ -2,6 +2,11 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "../../styles/tailwind.scss";
 import { i18n, Locale } from "../../../i18n-config";
 import { getDictionaries, setDictionaries } from "@/get-dictionary";
+import Navbar from "@/app/_components/Navbar";
+import { Suspense } from "react";
+import InternetConnection from "@/app/_components/InternetConnection";
+import getLocalizedData from "@/services/getLocalizedData";
+import { LayoutProps } from "@/models/IDictionary/ILayout";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -19,7 +24,7 @@ export async function generateStaticParams() {
 }
 
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params: { lang },
 }: Readonly<{
@@ -27,9 +32,17 @@ export default function RootLayout({
   params: { lang: Locale };
 }>) {
   setDictionaries(getDictionaries());
+  const { internetConnection } = await getLocalizedData<LayoutProps>(lang, 'layout');
+
   return (
-    <html lang="en">
+    <html lang={lang} dir="">
       <body className={plusJakartaSans.className}>
+        <Suspense>
+          <InternetConnection {...internetConnection} />
+        </Suspense>
+        <Suspense>
+          <Navbar />
+        </Suspense>
         {children}
       </body>
     </html>
