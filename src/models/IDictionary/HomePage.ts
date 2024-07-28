@@ -1,4 +1,4 @@
-import { ButtonProps } from "@/app/_components/Button"
+import { ButtonProps } from "@/app/_components/Button/button-types";
 import { ImageProps } from "next/image"
 
 

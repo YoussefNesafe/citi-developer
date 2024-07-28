@@ -19,7 +19,7 @@ export default async function NotFound({ params: { lang } }: any) {
         </div>
         <div className='flex flex-col gap-[4.272vw] tablet:gap-[2vw] desktop:gap-[0.928vw] items-center animate-fadeInSlideUp -translate-y-(10%) opacity-0'>
           <h2 className='font-bold text-[6.942vw] tablet:text-[4.5vw] desktop:text-[2.436vw]'>{title}</h2>
-          <Link href={button.href} className='bg-black/80 text-white py-[2.67vw] tablet:py-[1.25vw] desktop:py-[0.58vw] px-[10.68vw] tablet:px-[5vw] desktop:px-[2.32vw] rounded-full hover:bg-black transition-all duration-300 text-[3.738vw] tablet:text-[2vw] desktop:text-[0.928vw]'>
+          <Link href={button.href || '/'} className='bg-black/80 text-white py-[2.67vw] tablet:py-[1.25vw] desktop:py-[0.58vw] px-[10.68vw] tablet:px-[5vw] desktop:px-[2.32vw] rounded-full hover:bg-black transition-all duration-300 text-[3.738vw] tablet:text-[2vw] desktop:text-[0.928vw]'>
             {button.title}
           </Link>
         </div>
