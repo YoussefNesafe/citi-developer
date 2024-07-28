@@ -4,6 +4,7 @@ import { ImageProps } from "next/image"
 
 export type HomePageProps = {
   banner: HomePageBannerProps;
+  counterCards: CountUpSectionProps;
 }
 
 export type  HomePageBannerProps = {
@@ -26,4 +27,13 @@ export type  HomePageBannerProps = {
       title:string;
       sloganText: string;
     }
+}
+
+
+
+export type CountUpSectionProps = CountUpCardProps[]
+export type CountUpCardProps = {
+  number: number;
+  text: string;
+  suffix?: string;
 }

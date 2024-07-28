@@ -224,6 +224,31 @@
         "title":"Talk to our <br/> advisors now",
         "sloganText": "For over a decade, Citi Developers has reshaped global skylines and empowers communities"
       }
-    }
+    },
+    "counterCards": [
+      {
+        "number": 10,
+        "text": "Projects"
+      },
+      {
+        "number": 3,
+        "text": "Countries"
+      },
+      {
+        "number": 350,
+        "text": "Homes",
+        "suffix":"K+"
+      },
+      {
+        "number": 500,
+        "text": "Happy Customers",
+        "suffix":"K+"
+      },
+      {
+        "number": 450,
+        "text": "Sq Ft Developed Area",
+        "suffix":"M+"
+      }
+    ]
   }
 }
