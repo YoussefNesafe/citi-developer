@@ -1,99 +1,101 @@
 {
   "layout": {
     "internetConnection": {
-        "title":"No internet connection",
-        "description":"Please check your internet connection and try again."
+      "title": "No internet connection",
+      "description": "Please check your internet connection and try again."
     },
-    "languages": [
-        {
-          "label": "English",
-          "value": "en",
-          "href": "/en"
-        },
-        {
-          "label": "عربي",
-          "value": "ar",
-          "href": "/ar"
-        },
-        {
-          "label": "اُردُو",
-          "value": "ur",
-          "href": "/ur"
-        }
+    "navbar":{
+      "languages": [
+      {
+        "label": "English",
+        "value": "en",
+        "href": "/en"
+      },
+      {
+        "label": "عربي",
+        "value": "ar",
+        "href": "/ar"
+      },
+      {
+        "label": "اُردُو",
+        "value": "ur",
+        "href": "/ur"
+      }
       ],
+      "contactUsButton":{
+        "href": "/contact-us",
+        "title": "Contact us"
+      }
+    },
     "pagesLinks": [
-        {
-          "title": "Home",
-          "href": "/",
-          "key": "home" 
-        },
-        {
-          "title": "About",
-          "href": "/about",
-          "key": "about",
-          "subLinks": [
-            {
-              "title": "Citi Developer",
-              "href": "/about/citi-developer",
-              "key": "citi-developer"
-            },
-            {
-              "title": "Portfolio",
-              "href": "/about/portfolio",
-              "key": "portfolio"
-            },
-            {
-              "title": "News",
-              "href": "/about/news",
-              "key": "news"
-            },
-            {
-              "title": "Blogs",
-              "href": "/about/blogs",
-              "key": "blogs"
-            },
-            {
-              "title": "Our Team",
-              "href": "/about/our-team",
-              "key": "our-team"
-            },
-            {
-              "title": "Experience Center",
-              "href": "/about/experience-center",
-              "key": "experience-center"
-            },
-            {
-              "title": "Careers",
-              "href": "/about/careers",
-              "key": "careers"
-            }
-          ] 
-        },
-        {
-          "title": "Projects",
-          "href": "/projects",
-          "key": "projects",
-          "subLinks": [
-            {
-              "title": "Our Projects",
-              "href": "/projects/our-projects",
-              "key": "our-projects"
-            },
-            {
-              "title": "Aveline",
-              "href": "/projects/aveline",
-              "key": "aveline"
-            }
-          ] 
-        },
-        {
-          "title": "Contact Us",
-          "href": "/contact-us",
-          "key": "contact-us" 
-        }
-
-     ]
-      
+      {
+        "title": "Home",
+        "href": "/",
+        "pageKey": "home"
+      },
+      {
+        "title": "About",
+        "pageKey": "about",
+        "subLinks": [
+          {
+            "title": "Citi Developer",
+            "href": "/about/citi-developer",
+            "pageKey": "citi-developer"
+          },
+          {
+            "title": "Portfolio",
+            "href": "/about/portfolio",
+            "pageKey": "portfolio"
+          },
+          {
+            "title": "News",
+            "href": "/about/news",
+            "pageKey": "news"
+          },
+          {
+            "title": "Blogs",
+            "href": "/about/blogs",
+            "pageKey": "blogs"
+          },
+          {
+            "title": "Our Team",
+            "href": "/about/our-team",
+            "pageKey": "our-team"
+          },
+          {
+            "title": "Experience Center",
+            "href": "/about/experience-center",
+            "pageKey": "experience-center"
+          },
+          {
+            "title": "Careers",
+            "href": "/about/careers",
+            "pageKey": "careers"
+          }
+        ]
+      },
+      {
+        "title": "Projects",
+        "pageKey": "projects",
+        "subLinks": [
+          {
+            "title": "Our Projects",
+            "href": "/projects/our-projects",
+            "pageKey": "our-projects"
+          },
+          {
+            "title": "Aveline",
+            "href": "/projects/aveline",
+            "pageKey": "aveline"
+          }
+        ]
+      },
+      {
+        "title": "tour 360",
+        "href": "/tour-360",
+        "pageKey": "tour-360"
+      }
+    ]
   },
   "notFoundPage": {
     "title": "Opps! Page Not Found",
@@ -103,6 +105,49 @@
     }
   },
   "homePage": {
-    "test": "EN Language Test"
+    "banner": {
+      "subtractImage": {
+          "src": "/images/homepage/subtract.png",
+          "alt": "subtract",
+          "width": 1920,
+          "height": 1080
+        },
+      "sloganBox": {
+        "title": "Citi Developers",
+        "description": "Transforming Cities, Enriching Lives"
+      },
+      "firstLayerData": {
+        "image": {
+          "src": "/images/homepage/first.png",
+          "alt": "firstLayer",
+          "width": 1920,
+          "height": 1080
+        },
+        "startText": "Start the experience"
+      },
+      "secondLayerData": {
+        "image": {
+          "src": "/images/homepage/second.png",
+          "alt": "secondLayer",
+          "width": 1920,
+          "height": 1080
+        },
+        "luxuary": "luxury <br /> <span class='fontHeavy'>living</span>room"
+      },
+      "thirdLayerData": {
+        "image": {
+          "src": "/images/homepage/third.png",
+          "alt": "thirdLayer",
+          "width": 1920,
+          "height": 1080
+        },
+        "button": {
+          "href": "/contact-us",
+          "title": "Talk Now"
+        },
+        "title":"Talk to our <br/> advisors now",
+        "sloganText": "For over a decade, Citi Developers has reshaped global skylines and empowers communities"
+      }
+    }
   }
 }

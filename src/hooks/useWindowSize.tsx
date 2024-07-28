@@ -7,20 +7,23 @@ interface WindowSize {
   width: number;
   height: number;
   isDesktop: boolean;
+  isMobile: boolean;
 }
 
 export function useWindowSize(): WindowSize {
   const [windowSize, setWindowSize] = useState<WindowSize>({
     width: 0,
     height: 0,
-    isDesktop: false
+    isDesktop: false,
+    isMobile: false,
   });
 
   const handleSize = () => {
     setWindowSize({
       width: window.innerWidth,
       height: window.innerHeight,
-      isDesktop: window.innerWidth >= DESKTOP_BREAKPOINT
+      isDesktop: window.innerWidth >= DESKTOP_BREAKPOINT,
+      isMobile: window.innerWidth < DESKTOP_BREAKPOINT
     });
   };
 

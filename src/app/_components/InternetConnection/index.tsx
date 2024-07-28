@@ -2,7 +2,7 @@
 
 import isBrowser from '@/app/utils/isBrowser';
 import useInternetConnection from '@/hooks/useInternetConnection';
-import { InternetConnectionProps } from '@/models/IDictionary/ILayout';
+import { InternetConnectionProps } from '@/models/IDictionary/Layout';
 import Image from 'next/image';
 import { createPortal } from 'react-dom';
 

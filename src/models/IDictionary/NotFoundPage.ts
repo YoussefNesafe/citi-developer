@@ -1,4 +1,5 @@
-import { ButtonProps } from "./SharedProps";
+import { ButtonProps } from "@/app/_components/Button";
+
 
 export type NotFoundPageProps = {
     title:string;

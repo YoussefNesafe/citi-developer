@@ -2,24 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
 
+@layer base {
+  * {
+    @apply relative;
+    box-sizing: border-box;
+    font-variant-ligatures: none;
+  }
+  body{
+    @apply  text-dark;
+
+  }
+  
 }
 
 @layer components{
-  ::-webkit-scrollbar {
-    @apply hidden bg-transparent desktop:flex  desktop:w-[0.417vw];
-  }
+  // ::-webkit-scrollbar {
+  //   @apply hidden bg-transparent desktop:flex  desktop:w-[0.417vw];
+  // }
 
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-    @apply bg-transparent;
+  // /* Track */
+  // ::-webkit-scrollbar-track {
+  //   @apply bg-transparent;
+  // }
+
+  // /* Handle */
+  // ::-webkit-scrollbar-thumb {
+  //   @apply hidden bg-red-900  desktop:flex  desktop:rounded-[0.208vw];
+
+  // }
+
+  .fontHeavy {
+    font-weight: 900;
+  }
+  .textShadow{
+    text-shadow: 0px 4px 4px #000000cc;
   }
 
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    @apply hidden bg-red-900  desktop:flex  desktop:rounded-[0.208vw];
-
+  .navlink{
+    &:hover::before{
+      @apply w-[calc(100%+9.32vw)] tablet:w-[calc(100%+5vw)] desktop:w-[calc(100%+2.08vw)]
+    }
+    &::before{
+      content: "";
+      @apply  -left-[4.66vw] tablet:-left-[2.5vw] desktop:-left-[1.04vw] transition-all duration-300 block bg-dark/10 absolute top-0  h-full w-0
+    }
   }
 }
