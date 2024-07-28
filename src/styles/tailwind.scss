@@ -13,7 +13,9 @@
     @apply  text-dark;
 
   }
-  
+  section {
+    @apply px-[6.99vw] tablet:px-[6.25vw] desktop:px-[8.736vw]
+  }
 }
 
 @layer components{

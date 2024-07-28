@@ -13,6 +13,7 @@ import ScrollSmoother from "gsap-trial/ScrollSmoother";
 import { useGSAP } from "@gsap/react";
 import { isRtlLang } from "../utils/isRtlLang";
 import { getLangDir } from "../utils/getLangDir";
+import Footer from "../_components/Footer";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, useGSAP)
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -43,7 +44,7 @@ export default async function RootLayout({
   params: { lang: Locale };
 }>) {
   setDictionaries(getDictionaries());
-  const { internetConnection, navbar, pagesLinks } = await getLocalizedData<LayoutProps>(lang, 'layout');
+  const { internetConnection, navbar, pagesLinks, footer } = await getLocalizedData<LayoutProps>(lang, 'layout');
   const fontFamilyVariable = isRtlLang(lang) ? cairoFont.variable : plusJakartaSans.variable;
   return (
     <html lang={lang} dir={getLangDir(lang)} className={fontFamilyVariable}>
@@ -54,7 +55,10 @@ export default async function RootLayout({
         <Suspense>
           <Navbar {...navbar} links={pagesLinks} />
         </Suspense>
-        {children}
+        <main>
+          {children}
+        </main>
+        <Footer {...footer} links={pagesLinks} />
       </body>
     </html>
   );

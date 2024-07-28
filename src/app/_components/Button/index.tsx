@@ -23,7 +23,7 @@ export const buttonCVA = cva(
         primary: 'bg-primary-900 text-white hover:bg-primary-600',
         secondary: 'bg-primary-600 text-dark hover:bg-primary-600',
         white: 'bg-white text-primary-900',
-        transparent: 'bg-white/10 border border-white desktop:rounded-[5.2vw] text-white backdrop-blur-sm font-bold'
+        transparent: 'bg-white/10 border border-white rounded-[23.3vw] tablet:rounded-[12.5vw] desktop:rounded-[5.2vw] text-white backdrop-blur-sm font-bold'
       },
       size: {
         sm: "text-[2.33vw] tablet:text-[1.5vw] desktop:text-[0.936vw] px-[4.66vw] py-[1.864vw] tablet:px-[2.5vw] tablet:py-[1vw] desktop:px-[1.56vw] desktop:py-[0.52vw]",
@@ -49,7 +49,7 @@ const Button: FC<ButtonProps> = ({ as = "link", href, title, onClick = () => { }
 
   if (as === 'button') {
     return (
-      <button onClick={onClick} className={classes} {...props}>
+      <button onClick={onClick} className={''} {...props}>
         {title}
       </button>
     );

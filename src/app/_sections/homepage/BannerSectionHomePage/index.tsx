@@ -22,7 +22,7 @@ const BannerSectionHomePage = ({ firstLayerData, subtractImage, secondLayerData,
 
 
   return (
-    <section className='h-screen w-full overflow-hidden z-20 ' ref={wrapperRef}>
+    <section className='px-0 tablet:px-0 desktop:px-0 h-screen w-full overflow-hidden z-20 ' ref={wrapperRef}>
       <LastLayer thirdLayerData={thirdLayerData} />
       <MidLayer secondLayerData={secondLayerData} />
       <FirstLayer firstLayerData={firstLayerData} sloganBox={sloganBox} />

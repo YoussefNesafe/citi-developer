@@ -95,7 +95,83 @@
         "href": "/tour-360",
         "pageKey": "tour-360"
       }
-    ]
+    ],
+    "footer":{
+      "locationCard":{
+        "title": "Reserve your experience <br /><span>with us!</span>",
+        "description": " Secure your spot today and unlock exclusive access to our premier real estate experience. Join us for an unforgettable journey through innovation and excellence!",
+        "locationUrl": "https://maps.app.goo.gl/WENwtfSEt8c18Dtr5",
+        "button":{
+          "title": "enquire now",
+          "href": "https://docs.google.com/forms/d/e/1FAIpQLSeVdYnG6U9P3r-QCESarKyLptxd1r68R4Ymc261Uds2_Sh-tw/viewform"
+        }
+      },
+      "socialMediaLinks":[
+        {
+          "href": "#",
+          "icon": "facebook"
+        },
+        {
+          "href": "#",
+          "icon": "linkedin"
+        },
+        {
+          "href": "#",
+          "icon": "x"
+        },
+        {
+          "href": "#",
+          "icon": "youtube"
+        },
+        {
+          "href": "#",
+          "icon": "instagram"
+        }
+      ],
+      "whereToGoNextCards": [
+        {
+          "button": {
+            "href": "/projects/aveline",
+            "title": "Aveline"
+          },
+          "image": {
+            "src": "/images/footer/Aveline.png",
+            "alt": "aviline",
+            "width": 317 ,
+            "height": 265 
+          }
+        },
+        {
+          "button": {
+            "href": "/about/citi-developer",
+            "title": "Citi Developer"
+          },
+          "image": {
+            "src": "/images/footer/citi-developer.png",
+            "alt": "citi developer",
+            "width": 317 ,
+            "height": 265 
+          }
+        },
+        {
+          "button": {
+            "href": "/contact-us",
+            "title": "Contact us"
+          },
+          "image": {
+            "src": "/images/footer/contact-us.png",
+            "alt": "contact us",
+            "width": 317 ,
+            "height": 265 
+          }
+        }
+      ],
+      "contactUsButton":{
+        "href": "/contact-us",
+        "title": "Contact us"
+      },
+      "copyRights": "© 2010 CITI DEVELOPERS. All Rights Reserved"
+    }
   },
   "notFoundPage": {
     "title": "Opps! Page Not Found",

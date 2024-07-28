@@ -1,4 +1,5 @@
 import { ButtonProps } from "@/app/_components/Button/button-types";
+import { ImageProps } from "next/image";
 
 export type InternetConnectionProps = {
   title: string;
@@ -11,7 +12,6 @@ type LangItem = {
   value: string;
   href: string;
 }
-export type LanguagesProps = LangItem[];
 
 
 // Pages Links Types
@@ -23,18 +23,42 @@ export type PageLinkItemProps = {
 }
 type PageLinkProps =  PageLinkItemProps & {subLinks?: PageLinkItemProps[];}
 
-export type PagesLinksProps = PageLinkProps[];
-
 // Main Layout Types (it should match with the en.json file)
 export type LayoutProps = {
   internetConnection : InternetConnectionProps;
   navbar: Omit<NavbarProps, 'links'>
-  pagesLinks:PagesLinksProps;
+  pagesLinks:PageLinkProps[];
+  footer: Omit<FooterProps, 'links'>;
 }
 
 // Nabar Type
 export type NavbarProps = {
-  languages: LanguagesProps;
-  links: PagesLinksProps;
+  languages: LangItem[];
+  links: PageLinkProps[];
   contactUsButton: ButtonProps;
+}
+
+
+// Footer Type
+export type FooterProps = {
+  locationCard: LocationCardProps;
+  socialMediaLinks: SocialMediaLinkProps[];
+  whereToGoNextCards: WhereToGoNextCardProps[];
+  links: PageLinkProps[];
+  copyRights: string;
+  contactUsButton: ButtonProps;
+}
+
+export type LocationCardProps = {
+  title: string;
+  description: string;
+  locationUrl: string;
+  button: ButtonProps;
+}
+
+export type SocialMediaLinkProps = {href: string; icon: string;}
+
+export type WhereToGoNextCardProps = {
+  button: ButtonProps;
+  image: ImageProps;
 }
