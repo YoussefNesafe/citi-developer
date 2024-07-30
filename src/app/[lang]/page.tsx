@@ -3,15 +3,17 @@ import { Locale } from "../../../i18n-config";
 import getLocalizedData from "@/services/getLocalizedData";
 import BannerSectionHomePage from "../_sections/homepage/BannerSectionHomePage";
 import CountUpSection from "../_sections/homepage/CountUpSection";
+import WhatMakesUsDifferent from "../_sections/homepage/WhatMakesUsDifferent";
 
 
 export default async function Page({ params: { lang } }: { params: { lang: Locale } }) {
-  const { banner, counterCards } = await getLocalizedData<HomePageProps>(lang, 'homePage');
+  const { banner, counterCards, whatMakesUsDifferent } = await getLocalizedData<HomePageProps>(lang, 'homePage');
 
   return (
     <main>
       <BannerSectionHomePage {...banner} />
       <CountUpSection cards={counterCards} />
+      <WhatMakesUsDifferent {...whatMakesUsDifferent} />
     </main>
   );
 }

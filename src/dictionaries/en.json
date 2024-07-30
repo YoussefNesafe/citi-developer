@@ -4,25 +4,25 @@
       "title": "No internet connection",
       "description": "Please check your internet connection and try again."
     },
-    "navbar":{
+    "navbar": {
       "languages": [
-      {
-        "label": "English",
-        "value": "en",
-        "href": "/en"
-      },
-      {
-        "label": "عربي",
-        "value": "ar",
-        "href": "/ar"
-      },
-      {
-        "label": "اُردُو",
-        "value": "ur",
-        "href": "/ur"
-      }
+        {
+          "label": "English",
+          "value": "en",
+          "href": "/en"
+        },
+        {
+          "label": "عربي",
+          "value": "ar",
+          "href": "/ar"
+        },
+        {
+          "label": "اُردُو",
+          "value": "ur",
+          "href": "/ur"
+        }
       ],
-      "contactUsButton":{
+      "contactUsButton": {
         "href": "/contact-us",
         "title": "Contact us"
       }
@@ -96,17 +96,17 @@
         "pageKey": "tour-360"
       }
     ],
-    "footer":{
-      "locationCard":{
+    "footer": {
+      "locationCard": {
         "title": "Reserve your experience <br /><span>with us!</span>",
         "description": " Secure your spot today and unlock exclusive access to our premier real estate experience. Join us for an unforgettable journey through innovation and excellence!",
         "locationUrl": "https://maps.app.goo.gl/WENwtfSEt8c18Dtr5",
-        "button":{
+        "button": {
           "title": "enquire now",
           "href": "https://docs.google.com/forms/d/e/1FAIpQLSeVdYnG6U9P3r-QCESarKyLptxd1r68R4Ymc261Uds2_Sh-tw/viewform"
         }
       },
-      "socialMediaLinks":[
+      "socialMediaLinks": [
         {
           "href": "#",
           "icon": "facebook"
@@ -137,8 +137,8 @@
           "image": {
             "src": "/images/footer/Aveline.png",
             "alt": "aviline",
-            "width": 317 ,
-            "height": 265 
+            "width": 317,
+            "height": 265
           }
         },
         {
@@ -149,8 +149,8 @@
           "image": {
             "src": "/images/footer/citi-developer.png",
             "alt": "citi developer",
-            "width": 317 ,
-            "height": 265 
+            "width": 317,
+            "height": 265
           }
         },
         {
@@ -161,12 +161,12 @@
           "image": {
             "src": "/images/footer/contact-us.png",
             "alt": "contact us",
-            "width": 317 ,
-            "height": 265 
+            "width": 317,
+            "height": 265
           }
         }
       ],
-      "contactUsButton":{
+      "contactUsButton": {
         "href": "/contact-us",
         "title": "Contact us"
       },
@@ -183,11 +183,11 @@
   "homePage": {
     "banner": {
       "subtractImage": {
-          "src": "/images/homepage/subtract.png",
-          "alt": "subtract",
-          "width": 1920,
-          "height": 1080
-        },
+        "src": "/images/homepage/subtract.png",
+        "alt": "subtract",
+        "width": 1920,
+        "height": 1080
+      },
       "sloganBox": {
         "title": "Citi Developers",
         "description": "Transforming Cities, Enriching Lives"
@@ -221,7 +221,7 @@
           "href": "/contact-us",
           "title": "Talk Now"
         },
-        "title":"Talk to our <br/> advisors now",
+        "title": "Talk to our <br/> advisors now",
         "sloganText": "For over a decade, Citi Developers has reshaped global skylines and empowers communities"
       }
     },
@@ -237,18 +237,78 @@
       {
         "number": 350,
         "text": "Homes",
-        "suffix":"K+"
+        "suffix": "K+"
       },
       {
         "number": 500,
         "text": "Happy Customers",
-        "suffix":"K+"
+        "suffix": "K+"
       },
       {
         "number": 450,
         "text": "Sq Ft Developed Area",
-        "suffix":"M+"
+        "suffix": "M+"
       }
-    ]
+    ],
+    "whatMakesUsDifferent": {
+      "header": {
+        "subtitle": "Citi Developers",
+        "title": "What makes us Different?",
+        "description": "With a legacy of over a decade, we proudly stand as a world leading master developer, renowned for reshaping cityscapes and enriching communities across continents."
+      },
+      "cards": [
+        {
+          "image": {
+            "src": "/images/homepage/integrity.svg",
+            "alt": "Integrity",
+            "width": 72,
+            "height": 72
+          },
+          "title": "Integrity",
+          "description": "Trust and integrity is the bedrock of our foundation. We value credibility, and accountability, seing new benchmarks in building exceptional communities"
+        },
+        {
+          "image": {
+            "src": "/images/homepage/quality.svg",
+            "alt": "Quality",
+            "width": 72,
+            "height": 72
+          },
+          "title": "Quality",
+          "description": "Our commitment to quality goes beyond meeting industry standards, pushing the boundaries and creating properties that place high priority on attention to detail, liveability, and quality of life."
+        },
+        {
+          "image": {
+            "src": "/images/homepage/empathy.svg",
+            "alt": "Empathy",
+            "width": 72,
+            "height": 72
+          },
+          "title": "Empathy",
+          "description": "Empathy is the core of our brand ethos. By understanding and embracing the perspective of our community, we create developments that cater to their fostering a sense of belonging and enhancing their living experiences."
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/homepage/pool.png",
+          "alt":"pool",
+          "width": 885,
+          "height": 1456 
+        },
+        {
+          "src": "/images/homepage/bedroom.png",
+          "alt":"bedroom",
+          "width": 439 ,
+          "height": 443
+        },
+        {
+          "src": "/images/homepage/livingroom.png",
+          "alt":"livingroom",
+          "width": 878,
+          "height": 627 
+        }
+      ],
+      "animatedText": "We Published since 2023 - We Published since 2023 - "
+    }
   }
 }

@@ -51,4 +51,60 @@
       @apply  -left-[4.66vw] tablet:-left-[2.5vw] desktop:-left-[1.04vw] transition-all duration-300 block bg-dark/10 absolute top-0  h-full w-0
     }
   }
+
+
+  %linearBorder {
+    position: relative;
+    border-color: transparent;
+    background-color: transparent;
+    @apply p-[0.466vw] tablet:p-[0.25vw] desktop:p-[0.104vw];
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      /* control the border thickness */
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      @apply p-[0.466vw] tablet:p-[0.25vw] desktop:p-[0.104vw];
+    }
+
+    &.linear-border-animated {
+      @apply p-[0.466vw] tablet:p-[0.25vw] desktop:p-[0.104vw];
+      &::before {
+        @apply p-[0.466vw] tablet:p-[0.25vw] desktop:p-[0.104vw];
+        background-size: 500% auto;
+        animation: backgroundPositionFromLeftToRight 2s linear infinite alternate;
+      }
+    }
+  }
+
+  .linear-border {
+    @extend %linearBorder;
+
+    &::before {
+      content: '';
+      @apply bg-linear-border
+    }
+  }
+  .animatedText{
+    animation: textRotation 8s linear infinite;
+    span {
+      @apply absolute left-[50%];
+      transform-origin: 0 16.31vw;
+      @media (min-width:481px) {
+        transform-origin: 0 16.25vw;
+      }
+      @media (min-width:1024px) {
+        transform-origin: 0 6.76vw;
+      }
+    } 
+}
+
+  @keyframes textRotation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }

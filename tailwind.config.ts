@@ -57,7 +57,12 @@ const config: Config = {
       },
       backgroundImage: {
        'linear-black': 'radial-gradient(circle, rgba(45,49,60,1) 0%, rgba(0,0,0,1) 100%)',
+       'linear-primary': 'linear-gradient(91.84deg, rgba(177, 143, 93, 0.2) -10.81%, rgba(177, 143, 93, 0) 108.62%)',
+       'linear-border': 'linear-gradient(90deg, #B18F5D -28%, rgba(177, 143, 93, 0) 100.03%)',
       },
+      boxShadow: {
+        "custom": "5px 12px 40px 0px #00000026",
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
