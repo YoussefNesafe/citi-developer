@@ -4,7 +4,7 @@ import SectionHeader from '@/app/_components/SectionHeader'
 import SideSectionImages from '@/app/_components/SideSectionImages'
 import { cn } from '@/lib/utils'
 import { WhatMakesUsDifferentSectionProps } from '@/models/IDictionary/HomePage'
-import React, { HTMLAttributes } from 'react'
+import React, { HTMLAttributes, Suspense } from 'react'
 
 type Props = WhatMakesUsDifferentSectionProps & HTMLAttributes<HTMLElement>
 
@@ -19,7 +19,9 @@ const WhatMakesUsDifferent = ({ cards, animatedText, images, header, className, 
           }
         </div>
       </div>
-      <SideSectionImages images={images} animatedText={animatedText} />
+      <Suspense>
+        <SideSectionImages images={images} animatedText={animatedText} />
+      </Suspense>
     </section>
   )
 }

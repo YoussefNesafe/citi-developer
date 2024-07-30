@@ -99,12 +99,18 @@
       @media (min-width:1024px) {
         transform-origin: 0 6.76vw;
       }
-    } 
+    }
+
+}
+.section-py{
+  @apply py-[6.99vw] tablet:py-[6.25vw] desktop:py-[5.2vw]
+
+}
 }
 
-  @keyframes textRotation {
-    to {
-      transform: rotate(360deg);
-    }
+
+@keyframes textRotation {
+  to {
+    transform: rotate(360deg);
   }
 }

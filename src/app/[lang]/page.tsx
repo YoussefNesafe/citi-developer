@@ -12,8 +12,8 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
   return (
     <main>
       <BannerSectionHomePage {...banner} />
-      <CountUpSection cards={counterCards} />
-      <WhatMakesUsDifferent {...whatMakesUsDifferent} />
+      <CountUpSection cards={counterCards} className="section-py" />
+      <WhatMakesUsDifferent {...whatMakesUsDifferent} className="section-py" />
     </main>
   );
 }

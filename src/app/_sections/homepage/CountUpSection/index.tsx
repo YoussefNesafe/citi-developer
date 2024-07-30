@@ -6,10 +6,10 @@ import React, { HTMLAttributes } from 'react'
 
 type Props = { cards: CountUpSectionProps } & HTMLAttributes<HTMLElement>
 
-const CountUpSection = ({ cards, className }: Props) => {
+const CountUpSection = ({ cards, className, ...props }: Props) => {
   const cardsLength = cards.length
   return (
-    <section className={cn("flex w-full flex-col gap-[11.65vw] tablet:gap-[1.25vw] tablet:flex-wrap  tablet:flex-row  items-center justify-between text-center", className)}>
+    <section {...props} className={cn("flex w-full flex-col gap-[11.65vw] tablet:gap-[1.25vw] tablet:flex-wrap  tablet:flex-row  items-center justify-between text-center", className)}>
       {cards.map(({ number, text, suffix }, index) => (
         <>
           <CountUpCard
