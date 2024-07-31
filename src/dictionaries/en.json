@@ -291,24 +291,35 @@
       "images": [
         {
           "src": "/images/homepage/pool.png",
-          "alt":"pool",
+          "alt": "pool",
           "width": 885,
-          "height": 1456 
+          "height": 1456
         },
         {
           "src": "/images/homepage/bedroom.png",
-          "alt":"bedroom",
-          "width": 439 ,
+          "alt": "bedroom",
+          "width": 439,
           "height": 443
         },
         {
           "src": "/images/homepage/livingroom.png",
-          "alt":"livingroom",
+          "alt": "livingroom",
           "width": 878,
-          "height": 627 
+          "height": 627
         }
       ],
       "animatedText": "We Published since 2023 - We Published since 2023 - "
+    },
+    "visitExperienceCenter": {
+      "header": {
+        "title": "Visit our Experience center",
+        "description": "Explore The Future Of Real Estate With Us At Our Cutting-Edge Center"
+      },
+      "button": {
+        "title": "Explore More",
+        "href": "about/experience-center"
+      },
+      "videoSrc": "https://www.youtube.com/embed/Lg8Tevx9u8o?si=_qAP8JMbLQJ-J6we&showinfo=0"
     }
   }
 }

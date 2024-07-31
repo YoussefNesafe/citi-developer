@@ -18,27 +18,27 @@ const SideSectionImages = ({ animatedText, images, className }: SideSectionImage
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ImageWrapperRef.current,
-        start: "bottom bottom",
-        end: "30% 30%",
+        start: "top 70%",
+        end: "20% 20%",
         scrub: 1,
       },
     });
     tl.to(".image-1", {
       left: 0,
       opacity: 1,
-      duration: 1,
+      duration: 0.5,
     }, 0).to('.animatedTextWrapper', {
       scale: 1,
       opacity: 1,
-      duration: 1
+      duration: 0.5
     }).to(".image-2", {
       top: 0,
       opacity: 1,
-      duration: 1,
+      duration: 0.5,
     }).to(".image-3", {
       bottom: 0,
       opacity: 1,
-      duration: 1,
+      duration: 0.5,
     });
 
 

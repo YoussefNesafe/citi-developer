@@ -1,12 +1,13 @@
 import { ButtonProps } from "@/app/_components/Button/button-types";
 import { ImageProps } from "next/image"
-import { SectionHeaderProps } from "./SharedProps";
+import { SectionHeaderProps, VisitExperienceCenterSectionProps } from "./SharedProps";
 
 
 export type HomePageProps = {
   banner: HomePageBannerProps;
   counterCards: CountUpSectionProps;
   whatMakesUsDifferent: WhatMakesUsDifferentSectionProps;
+  visitExperienceCenter :VisitExperienceCenterSectionProps;
 }
 
 // Banner Props
