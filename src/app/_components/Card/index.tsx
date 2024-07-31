@@ -1,16 +1,15 @@
-import React, { ReactElement } from 'react'
 import { CardProps, CardType } from './types'
 import PointCard from './PointCard'
+import JourneyCard from './JourneyCard'
 
 
 
 
-const Card = ({ description, title, image, type = CardType.DEFAULT, ...props }: CardProps) => {
+const Card = ({ type, ...props }: CardProps) => {
 
   const CardsMap: { [type in CardType]: any } = {
-    [CardType.POINT_CARD]: <PointCard title={title} description={description} image={image} {...props} />,
-    [CardType.DEFAULT]: <></>,
-    [CardType.HORIZONTAL]: <></>
+    [CardType.POINT_CARD]: <PointCard {...props} />,
+    [CardType.JOURNEY_CARD]: <JourneyCard   {...props} />,
   }
 
 

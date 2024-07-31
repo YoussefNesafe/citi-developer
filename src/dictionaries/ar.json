@@ -320,6 +320,61 @@
         "href": "about/experience-center"
       },
       "videoSrc": "https://www.youtube.com/embed/Lg8Tevx9u8o?si=_qAP8JMbLQJ-J6we&showinfo=0"
+    },
+    "ourJourney":{
+      "header": {
+        "title": "Our Journey"
+      },
+      "cards":[
+        {
+          "image": {
+            "src": "/images/shared/pakistan.jpeg",
+            "alt":"pakistan",
+            "width": 812,
+            "height": 341
+          },
+          "title": "Pakistan",
+          "date": "2011",
+          "description": "Our roots lie in Pakistan, where we have been instrumental in building entire townships and changing the face of cities while modernizing",
+          "readMore":"and evolving them... <span>Read more</span>",
+          "button":{
+            "title": "Read More",
+            "href": "/projects/our-projects?location=pakistan"
+          }
+        },
+        {
+          "image": {
+            "src": "/images/shared/uk.jpeg",
+            "alt":"uk",
+            "width": 812,
+            "height": 608
+          },
+          "title": "UK",
+          "date": "2014",
+          "description": "Citi Developers has an active presence in the UK, featuring exquisite properties in some of its",
+          "readMore":"most beautiful towns... <span>Read more</span>",
+          "button":{
+            "title": "Read More",
+            "href": "/projects/our-projects?location=uk"
+          }
+        },
+        {
+          "image": {
+            "src": "/images/shared/uae.jpeg",
+            "alt":"UAE",
+            "width": 812,
+            "height": 541
+          },
+          "title": "UAE",
+          "date": "2029",
+          "description": "Beginning with Jumeirah Village Circle in Dubai followed very closely with Majan, and then in Al Marjan island, every project will be a level up",
+          "readMore": "from the previous one.... <Span>Read more</span>",
+          "button":{
+            "title": "Read More",
+            "href": "/projects/our-projects?location=uae"
+          }
+        }
+      ]
     }
   }
 }

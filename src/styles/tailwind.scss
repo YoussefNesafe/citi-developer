@@ -88,6 +88,14 @@
       @apply bg-linear-border
     }
   }
+  .linear-border-vertical {
+    @extend %linearBorder;
+
+    &::before {
+      content: '';
+      @apply bg-linear-border-vertical
+    }
+  }
   .animatedText{
     animation: textRotation 8s linear infinite;
     span {

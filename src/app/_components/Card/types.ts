@@ -1,15 +1,18 @@
 import { ImageProps } from "next/image";
 import { HTMLAttributes } from "react";
+import { ButtonProps } from "../Button/button-types";
 
 export enum CardType  {
-  HORIZONTAL = 'horizontal',
   POINT_CARD = 'point_card',
-  DEFAULT = 'default'
+  JOURNEY_CARD= 'journey_card'
 }
 
 export type CardProps = HTMLAttributes<HTMLElement> & {
-  type?:  CardType;
   title: string;
   description: string;
+  type:  CardType;
+  date?: string;
   image?: ImageProps & {className?: string};
+  button?: ButtonProps;
+  readMore?: string;
 }
