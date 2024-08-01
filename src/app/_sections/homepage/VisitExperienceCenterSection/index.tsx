@@ -30,17 +30,17 @@ const VisitExperienceCenterSection = ({ header, videoSrc, button, className, ...
       },
     });
     tl.to('.header', {
-      right: 0,
+      x: 0,
       opacity: 1,
       duration: 1
     }).to(".dialog-trigger", {
-      left: 0,
+      x: 0,
       opacity: 1,
       duration: 1,
     }, 0).to('.button', {
-      bottom: 0,
+      y: 0,
       opacity: 1,
-      duration: 1
+      duration: 0.5
     });
   }, { scope: wrapperRef })
 
@@ -48,9 +48,9 @@ const VisitExperienceCenterSection = ({ header, videoSrc, button, className, ...
 
   return (
     <section {...props} ref={wrapperRef} className={cn('flex flex-col items-center gap-[3.262vw] tablet:gap-[2.5vw] desktop:gap-[2.34vw] overflow-hidden', className)}>
-      <SectionHeader className='opacity-0 -right-[70%] header text-center' {...header} />
+      <SectionHeader className='opacity-0 translate-x-[70%] header text-center' {...header} />
       <Dialog>
-        <DialogTrigger className='border-white shadow-custom border-[1.864vw] tablet:border-[1vw] desktop:border-[0.416vw] relative rounded-[0.932vw] tablet:rounded-[0.5vw] desktop:rounded-[0.208vw] -left-[70%] opacity-0 dialog-trigger'>
+        <DialogTrigger className='border-white shadow-custom border-[1.864vw] tablet:border-[1vw] desktop:border-[0.416vw] relative rounded-[0.932vw] tablet:rounded-[0.5vw] desktop:rounded-[0.208vw] -translate-x-[70%] opacity-0 dialog-trigger'>
           <Image src='/images/homepage/aveline_Landscape.jpg' width={5500} height={3099} alt='aveline_Landscape' className='w-full h-auto object-cover desktop:h-[30.68vw] rounded-[0.932vw] tablet:rounded-[0.5vw] desktop:rounded-[0.208vw]' />
           <PlayButtonIcon />
         </DialogTrigger>
@@ -62,7 +62,7 @@ const VisitExperienceCenterSection = ({ header, videoSrc, button, className, ...
           />
         </DialogContent>
       </Dialog>
-      <Button {...button} className='uppercase button opacity-0 -bottom-[10%]' size='md' />
+      <Button {...button} className='uppercase button opacity-0 -translate-y-[10%]' size='md' />
     </section>
   )
 }
