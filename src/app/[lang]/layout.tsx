@@ -53,7 +53,7 @@ export default async function RootLayout({
           <InternetConnection {...internetConnection} />
         </Suspense>
         <Suspense>
-          {/* <Navbar {...navbar} links={pagesLinks} /> */}
+          <Navbar {...navbar} links={pagesLinks} />
         </Suspense>
         <main>
           {children}
