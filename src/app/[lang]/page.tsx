@@ -6,10 +6,13 @@ import CountUpSection from "../_sections/homepage/CountUpSection";
 import WhatMakesUsDifferent from "../_sections/homepage/WhatMakesUsDifferent";
 import VisitExperienceCenterSection from "../_sections/homepage/VisitExperienceCenterSection";
 import OurJourney from "../_sections/homepage/OurJourney";
+import LatestNews from "../_sections/shared/LatestNews";
+import { SharedSectionsProps } from "@/models/IDictionary";
 
 
 export default async function Page({ params: { lang } }: { params: { lang: Locale } }) {
   const { banner, counterCards, whatMakesUsDifferent, visitExperienceCenter, ourJourney } = await getLocalizedData<HomePageProps>(lang, 'homePage');
+  const { latestNews } = await getLocalizedData<SharedSectionsProps>(lang, 'shared');
 
   return (
     <>
@@ -18,6 +21,7 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
       <WhatMakesUsDifferent {...whatMakesUsDifferent} className="section-py" />
       <VisitExperienceCenterSection {...visitExperienceCenter} className="section-py" />
       <OurJourney {...ourJourney} className="section-py" />
+      <LatestNews {...latestNews} className="section-py" />
     </>
   );
 }

@@ -1,3 +1,4 @@
+import { LatestNewsProps } from './SharedProps';
 import { HomePageProps } from './HomePage';
 import { LayoutProps } from "./Layout";
 import { NotFoundPageProps } from './NotFoundPage';
@@ -5,5 +6,10 @@ import { NotFoundPageProps } from './NotFoundPage';
 export interface IDictionary {
   layout: LayoutProps;
   notFoundPage: NotFoundPageProps;
-  homePage: HomePageProps;  
+  homePage: HomePageProps;
+  shared: SharedSectionsProps;
+} 
+
+export type SharedSectionsProps = {
+  latestNews: LatestNewsProps
 } 

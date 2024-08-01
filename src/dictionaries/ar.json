@@ -376,5 +376,80 @@
         }
       ]
     }
+  },
+  
+"shared": {
+  "latestNews": {
+    "header": {
+      "title": "Latest News and Resources",
+      "description": "See the developments that have occurred to LearnEasers in the world"
+    },
+    "button": {
+      "title": "News",
+      "href": "/about/news"
+    },
+    "mainArticle": {
+      "image": {
+        "src": "/images/shared/CEO.png",
+        "alt": "CEO",
+        "width": 1280,
+        "height": 680 
+      },
+      "title": "Al Watan - Real Estate",
+      "description": "زوريز مالك المدير التنفيذي لشركة سيتي ديفيلوبرز يكشف عن توسعات جديدة للشركة في الإمارات بمفاهيم عقارية مبتكرة",
+      "date": "04 Mar 2024",
+      "button": {
+        "title": "Read More",
+        "href": "https://alwatan.ae/posts/1317005"
+      }
+    },
+    "cards":[
+      {
+        "image": {
+          "src": "/images/shared/citi-building.png",
+          "alt": "citi-building",
+          "width": 557,
+          "height": 399
+        },
+        "title": "The Gulf Time - Real Estate",
+        "description": "We Want To Deliver High-Quality Projects Tailored To The UAE Market: Citi Developers CEO",
+        "date": "01 Mar 2024",
+        "button": {
+          "title": "Read More",
+          "href": "https://gulftime.ae/we-want-to-deliver-high-quality-projects-tailored-to-the-uae-market-citi-developers-ceo"
+        }
+      },
+      {
+        "image": {
+          "src": "/images/shared/VR.png",
+          "alt": "vr",
+          "width": 557,
+          "height": 397
+        },
+        "title": "Construction Business News",
+        "description": "Citi Developers Unveils Innovative Experience Centre Showcasing Aveline Residences",
+        "date": "13 Feb 2024",
+        "button": {
+          "title": "Read More",
+          "href": "https://www.cbnme.com/news/ampg-announces-60-per-cent-sales-closure-for-plazzo-residence"
+        }
+      },
+      {
+        "image": {
+          "src": "/images/shared/roof.png",
+          "alt": "roof",
+          "width": 557,
+          "height": 399
+        },
+        "title": "Dubai Newsweek - Real Estate",
+        "description": "Citi Developers Unveils Innovative Experience Centre Showcasing Aveline Residences",
+        "date": "6 Feb 2024",
+        "button": {
+          "title": "Read More",
+          "href": "https://dubainewsweek.com/citi-developers-experience-centre-aveline-residences"
+        }
+      }
+    ]
   }
+} 
 }

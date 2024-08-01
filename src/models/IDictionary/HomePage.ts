@@ -1,10 +1,9 @@
 import { ButtonProps } from "@/app/_components/Button/button-types";
 import { ImageProps } from "next/image"
-import { SectionHeaderProps, VisitExperienceCenterSectionProps } from "./SharedProps";
+import { AdditionalProps, SectionHeaderProps, VisitExperienceCenterSectionProps } from "./SharedProps";
 import { HTMLAttributes } from "react";
 import { CardProps } from "@/app/_components/Card/types";
 
-type AdditionalProps = HTMLAttributes<HTMLElement>
 
 export type HomePageProps = {
   banner: HomePageBannerProps;
