@@ -10,20 +10,20 @@ export const animateHomePageBanner = (wrapperRef:RefObject<HTMLElement>) => {
 
     tl.to('.sloganBox', {
         opacity: 1,
-        left: '1.56vw',
+        left: 10,
         duration: 1.5,
         delay: 0.2,
       }, 0) // start at the same time
 
       .to('.experienceBox', {
         opacity: 1,
-        bottom: 0,
+        y: 0,
         duration: 1.5,
         delay: 0.2,
       }, 0) // start at the same time
 
       .to(".firstLayer img", {
-        scale: 1.1,
+        scale: 1.05,
         duration: 1.5,
       }, 0) // start at the same time
   };
@@ -39,7 +39,6 @@ export const animateHomePageBanner = (wrapperRef:RefObject<HTMLElement>) => {
       },
     });
   
-    // Animations for the first scroll
     tl.to(".firstLayer img", {
       scale: 8,
       transformOrigin: "center center",
@@ -48,14 +47,15 @@ export const animateHomePageBanner = (wrapperRef:RefObject<HTMLElement>) => {
     }, 0) // Start at the same time
   
       .to(".firstLayer .sloganBox", {
-        translateY: "-150%",
+        y: "-150%",
         duration: 1,
       }, 0) // Start at the same time
   
       .to(".luxuryBox", {
         opacity: 1,
+        x: 0,
         duration: 0.6,
-      }, 0) // Start at the same time
+      }, 0)
   
       .to('.experienceBox', {
         opacity: 0,
@@ -90,6 +90,7 @@ export const animateHomePageBanner = (wrapperRef:RefObject<HTMLElement>) => {
   
       .to(".luxuryBox", {
         opacity: 0,
+        x: "100%",
         duration: 0.2,
       }, "-=0.5")
       .to(".firstLayer .sloganBox", {
@@ -97,9 +98,9 @@ export const animateHomePageBanner = (wrapperRef:RefObject<HTMLElement>) => {
         duration: 1,
       }, "-=0.5")
       .to(".lastLayer .contactus", {
-      opacity: 1,
-      bottom: 0,
-      duration: 0.5,
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
     }, "-=0.5");
   };
 
