@@ -40,7 +40,7 @@ const VisitExperienceCenterSection = ({ header, videoSrc, button, className, ...
     }, 0).to('.button', {
       y: 0,
       opacity: 1,
-      duration: 0.5
+      duration: 0.3
     });
   }, { scope: wrapperRef })
 
@@ -62,7 +62,9 @@ const VisitExperienceCenterSection = ({ header, videoSrc, button, className, ...
           />
         </DialogContent>
       </Dialog>
-      <Button {...button} className='uppercase button opacity-0 -translate-y-[10%]' size='md' />
+      <div className=' button opacity-0 translate-y-[4.66vw] tablet:translate-y-[2.5vw] desktop:translate-y-[1.04vw]'>
+        <Button {...button} className='uppercase' size='md' />
+      </div>
     </section>
   )
 }

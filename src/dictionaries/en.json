@@ -361,8 +361,8 @@
           },
           "title": "Pakistan",
           "date": "2011",
-          "description": "Our roots lie in Pakistan, where we have been instrumental in building entire townships and changing the face of cities while modernizing",
-          "readMore":"and evolving them... <span>Read more</span>",
+          "description": "Our roots lie in Pakistan, where we have been instrumental in building entire townships and changing the face of cities... ",
+          "readMore":"Read more",
           "button":{
             "title": "Read More",
             "href": "/projects/our-projects?location=pakistan"
@@ -377,8 +377,8 @@
           },
           "title": "UK",
           "date": "2014",
-          "description": "Citi Developers has an active presence in the UK, featuring exquisite properties in some of its",
-          "readMore":"most beautiful towns... <span>Read more</span>",
+          "description": "Citi Developers has an active presence in the UK, featuring exquisite properties in some of its most beautiful towns... ",
+          "readMore":"Read more",
           "button":{
             "title": "Read More",
             "href": "/projects/our-projects?location=uk"
@@ -393,8 +393,8 @@
           },
           "title": "UAE",
           "date": "2029",
-          "description": "Beginning with Jumeirah Village Circle in Dubai followed very closely with Majan, and then in Al Marjan island, every project will be a level up",
-          "readMore": "from the previous one.... <Span>Read more</span>",
+          "description": "Beginning with Jumeirah Village Circle in Dubai followed very closely with Majan, and then in Al Marjan island... ",
+          "readMore": "Read more",
           "button":{
             "title": "Read More",
             "href": "/projects/our-projects?location=uae"

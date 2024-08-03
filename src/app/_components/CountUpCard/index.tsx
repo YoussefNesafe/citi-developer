@@ -18,10 +18,12 @@ export default function CountUpCard({
   return (
     <div className={cn('text-center flex flex-col gap-[1.165vw] tablet:gap-[1.25vw] desktop:gap-[2.912vw]', className)} {...props}>
       <CountUp
-        enableScrollSpy
         suffix={suffix}
         end={number}
         duration={1}
+        prefix={`${number}`.length === 1 ? '0' : ''}
+        enableScrollSpy
+        scrollSpyOnce
         className='text-dark font-extrabold text-[9.32vw] tablet:text-[3.75vw] desktop:text-[3.12vw] leading-[1.25]'
       />
       {text ? (
