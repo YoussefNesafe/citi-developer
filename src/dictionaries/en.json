@@ -310,6 +310,32 @@
       ],
       "animatedText": "We Published since 2023 - We Published since 2023 - "
     },
+    "avelineSection":{
+      "header": {
+        "title": "Aveline",
+        "description": "Beginning with Jumeirah Village Circle in Dubai followed very closely with Majan, and Dubai Maritime City, every project will be a level up from the previous one. Just like Aveline the recent project by CD."
+      },
+      "images": [
+        {
+          "src": "/images/homepage/aveline_Landscape.jpg",
+          "alt": "aveline_Landscape",
+          "width": 5500,
+          "height": 3099
+        },
+        {
+          "src": "/images/aveline/Lobby/Final Image 1.jpg",
+          "alt": "lobby",
+          "width": 4000,
+          "height": 2250
+        },
+        {
+          "src": "/images/aveline/13th Floor/Final Image 2.jpg",
+          "alt": "pool",
+          "width": 4000,
+          "height": 2250
+        }
+      ]
+    },
     "visitExperienceCenter": {
       "header": {
         "title": "Visit our Experience center",

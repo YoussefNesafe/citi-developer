@@ -11,8 +11,8 @@ const PointCard = ({ description, title, image, className, ...props }: Omit<Card
         alt={image.alt}
         className={cn('w-[10.252vw] tablet:w-[5.5vw] desktop:w-[3.744vw] h-[10.252vw] tablet:h-[5.5vw] desktop:h-[3.744vw] absolute top-[50%] -translate-y-[50%] -left-[5.126vw] tablet:-left-[2.75vw] desktop:-left-[1.872vw]', image.className)}
       /> : <></>}
-      <div className='text-[3.262vw] tablet:text-[1.75vw] desktop:text-[1.248vw] font-semibold leading-[1.4]'>{title}</div>
-      <div className='text-[2.796vw] tablet:text-[1.5vw] desktop:text-[0.832vw] leading-[1.25] text-gray-450'>{description}</div>
+      <div className='text-[3.721vw] tablet:text-[1.75vw] desktop:text-[1.248vw] font-bold leading-[1.4]'>{title}</div>
+      <div className='text-[3.256vw] tablet:text-[1.5vw] desktop:text-[0.832vw] leading-[1.25] text-gray-450'>{description}</div>
     </div>
   )
 }
