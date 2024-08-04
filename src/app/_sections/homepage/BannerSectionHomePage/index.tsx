@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 "use client";
 
 import { useRef } from 'react';
@@ -11,7 +10,7 @@ import FirstLayer from './components/FirstLayer';
 import { animateHomePageBanner } from './animations';
 
 
-const BannerSectionHomePage = ({ firstLayerData, subtractImage, secondLayerData, sloganBox, thirdLayerData }: HomePageBannerProps) => {
+const BannerSectionHomePage = ({ firstLayerData, secondLayerData, sloganBox, thirdLayerData }: HomePageBannerProps) => {
   const wrapperRef = useRef(null);
   useGSAP(
     () => animateHomePageBanner(wrapperRef),

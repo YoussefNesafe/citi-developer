@@ -194,7 +194,7 @@
       },
       "firstLayerData": {
         "image": {
-          "src": "/images/homepage/first.png",
+          "src": "/images/homepage/first.webp",
           "alt": "firstLayer",
           "width": 1920,
           "height": 1080
@@ -203,7 +203,7 @@
       },
       "secondLayerData": {
         "image": {
-          "src": "/images/homepage/second.png",
+          "src": "/images/homepage/second.webp",
           "alt": "secondLayer",
           "width": 1920,
           "height": 1080
@@ -212,7 +212,7 @@
       },
       "thirdLayerData": {
         "image": {
-          "src": "/images/homepage/third.png",
+          "src": "/images/homepage/third.webp",
           "alt": "thirdLayer",
           "width": 1920,
           "height": 1080
@@ -290,7 +290,7 @@
       ],
       "images": [
         {
-          "src": "/images/homepage/pool.png",
+          "src": "/images/homepage/pool.webp",
           "alt": "pool",
           "width": 885,
           "height": 1456
@@ -317,19 +317,19 @@
       },
       "images": [
         {
-          "src": "/images/homepage/aveline_Landscape.jpg",
+          "src": "/images/homepage/aveline_Landscape.webp",
           "alt": "aveline_Landscape",
           "width": 5500,
           "height": 3099
         },
         {
-          "src": "/images/aveline/Lobby/Final Image 1.jpg",
+          "src": "/images/aveline/Lobby/image_1.webp",
           "alt": "lobby",
           "width": 4000,
           "height": 2250
         },
         {
-          "src": "/images/aveline/13th Floor/Final Image 2.jpg",
+          "src": "/images/aveline/13th Floor/image_2.webp",
           "alt": "pool",
           "width": 4000,
           "height": 2250
@@ -419,7 +419,7 @@
         "src": "/images/shared/CEO.png",
         "alt": "CEO",
         "width": 1280,
-        "height": 680 
+        "height": 680
       },
       "title": "Al Watan - Real Estate",
       "description": "زوريز مالك المدير التنفيذي لشركة سيتي ديفيلوبرز يكشف عن توسعات جديدة للشركة في الإمارات بمفاهيم عقارية مبتكرة",

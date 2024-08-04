@@ -51,7 +51,7 @@ const VisitExperienceCenterSection = ({ header, videoSrc, button, className, ...
       <SectionHeader className='opacity-0 translate-x-[70%] header text-center' {...header} />
       <Dialog>
         <DialogTrigger className='border-white shadow-custom border-[1.864vw] tablet:border-[1vw] desktop:border-[0.416vw] relative rounded-[0.932vw] tablet:rounded-[0.5vw] desktop:rounded-[0.208vw] -translate-x-[70%] opacity-0 dialog-trigger'>
-          <Image src='/images/homepage/aveline_Landscape.jpg' width={5500} height={3099} alt='aveline_Landscape' className='w-full h-auto object-cover desktop:h-[30.68vw] rounded-[0.932vw] tablet:rounded-[0.5vw] desktop:rounded-[0.208vw]' />
+          <Image src='/images/homepage/aveline_Landscape.webp' width={5500} height={3099} alt='aveline_Landscape' className='w-full h-auto object-cover desktop:h-[30.68vw] rounded-[0.932vw] tablet:rounded-[0.5vw] desktop:rounded-[0.208vw]' />
           <PlayButtonIcon />
         </DialogTrigger>
         <DialogContent className='w-[93.2vw] tablet:w-[95vw] desktop:w-[55.484vw] h-[52.425vw] tablet:h-[53.125vw] desktop:h-[31.2vw]'>

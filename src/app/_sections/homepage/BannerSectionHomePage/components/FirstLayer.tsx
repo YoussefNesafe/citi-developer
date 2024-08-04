@@ -3,7 +3,7 @@ import { HomePageBannerProps } from '@/models/IDictionary/HomePage'
 import Image from 'next/image'
 import React from 'react'
 
-const FirstLayer = ({ firstLayerData, sloganBox }: Pick<HomePageBannerProps, 'firstLayerData' | 'sloganBox'>) => {
+const FirstLayer = ({ firstLayerData, sloganBox }: Omit<HomePageBannerProps, 'secondLayerData' | 'thirdLayerData'>) => {
   return (
     <div className='firstLayer h-screen w-auto overflow-hidden'>
       <div className='sloganBox absolute translate-x-0 opacity-0 bottom-[23.3vw] tablet:bottom-[25vw] desktop:bottom-[1.56vw] z-[2] max-w-[52.425vw] tablet:max-w-[37.5vw] desktop:max-w-[28.236vw] bg-black/50 rounded-[2.796vw] tablet:rounded-[1.5vw] desktop:rounded-[0.624vw] p-[2.33vw] tablet:p-[2.5vw] desktop:p-[1.04vw] backdrop-blur-sm'>

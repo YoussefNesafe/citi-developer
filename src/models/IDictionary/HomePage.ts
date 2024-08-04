@@ -15,8 +15,7 @@ export type HomePageProps = {
 }
 
 // Banner Props
-export type  HomePageBannerProps = {
-  subtractImage:ImageProps;
+export type  HomePageBannerProps = AdditionalProps & {
     sloganBox : {
       title: string;
       description: string;
