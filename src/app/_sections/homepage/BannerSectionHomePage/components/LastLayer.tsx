@@ -9,7 +9,7 @@ const LastLayer = ({ thirdLayerData: { button, image, sloganText, title } }: Pic
       <div className=' contactus opacity-0 bottom-0 translate-y-[25%] absolute left-0 w-full z-[2] text-center'>
         <h2
           dangerouslySetInnerHTML={{ __html: title }}
-          className='max-w-[80%] desktop:max-w-[52.728vw] mb-[3.728vw] tablet:mb-[2vw] desktop:mb-[0.833vw] text-white font-lexendExa m-auto font-bold text-[11.65vw] tablet:text-[10vw] desktop:text-[5.72vw] textShadow'
+          className='max-w-[80%] desktop:max-w-[52.728vw] mb-[14vw] tablet:mb-[12vw] desktop:mb-[5vw] text-white font-lexendExa m-auto font-bold text-[11.65vw] tablet:text-[10vw] desktop:text-[5.72vw] textShadow leading-none'
         />
         <div className='w-full bottom-0 bg-white flex flex-col justify-center items-center pb-[6.99vw] tablet:pb-[3.75vw] desktop:pb-[1.56vw]'>
           <Button theme='secondary' {...button} className='-translate-y-[6.058vw] tablet:-translate-y-[3.375vw] desktop:-translate-y-[1.976vw]' />

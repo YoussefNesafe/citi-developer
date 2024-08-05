@@ -16,7 +16,7 @@ export default function CountUpCard({
   ...props
 }: Props) {
   return (
-    <div className={cn('text-center flex flex-col gap-[1.165vw] tablet:gap-[1.25vw] desktop:gap-[2.912vw]', className)} {...props}>
+    <div className={cn('text-center flex flex-col gap-[1.165vw] tablet:gap-0', className)} {...props}>
       <CountUp
         suffix={suffix}
         end={number}

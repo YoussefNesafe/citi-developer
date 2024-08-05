@@ -10,9 +10,10 @@
     font-variant-ligatures: none;
   }
   body{
-    @apply  text-dark;
-    background: url('/images//shared/white-bg.png') no-repeat fixed;
-
+    @apply text-dark; 
+    background: url('/images/shared/white-bg.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
   }
   section {
     @apply px-[6.99vw] tablet:px-[6.25vw] desktop:px-[8.736vw]
